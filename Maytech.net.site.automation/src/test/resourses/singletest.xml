@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestingBasics" verbose="5" data-provider-thread-count="1">
+		<parameter name="browserName" value="firefox"/>	
+	
+	<test name="TestLQAS">
+	    <groups>
+	        <run>
+	            <include name="groupLQAS" />
+	        </run>
+	    </groups>
+	
+		<classes>
+		 <class name="net.Maytech.testcase.testcategories.hometests.HomePageTestSuite"/>
+		<class name="net.Maytech.testcase.testcategories.logintests.TryLoginPageTestSuite"/>
+		  <class name="net.Maytech.testcase.testcategories.buynowtests.BuyNowPageTestSuite"/>
+		</classes>
+			
+		<!--
+		<packages>
+			<package name="com.opower.testcase.testcategories.logintests"/>
+		</packages>
+		-->	
+	</test>	  
+</suite>
